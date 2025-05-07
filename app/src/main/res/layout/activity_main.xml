@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/sd_2"
+            android:layout_width="104dp"
+            android:layout_height="72dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="40dp"
+            android:text="湿度 --"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="#E0E0E0"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/wd_2"
+            android:layout_width="104dp"
+            android:layout_height="72dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="33dp"
+            android:layout_marginTop="40dp"
+            android:text="温度 --"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:background="#E0E0E0"
+            android:padding="8dp"/>
+
+        <!-- New TextView for History -->
+        <TextView
+            android:id="@+id/history_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sd_2"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="历史记录 (最新 10 条)"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/history_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/history_title"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:padding="8dp"
+            android:background="#F5F5F5"
+            android:gravity="start|top"
+            android:minHeight="150dp"
+            android:text="正在加载历史记录..."
+            android:textSize="14sp"
+            android:scrollbars="vertical" />
+
+    </RelativeLayout>
+</ScrollView>
